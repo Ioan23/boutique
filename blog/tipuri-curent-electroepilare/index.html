@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termoliză, Galvanic sau Blend? Tipurile de Curent în Electroepilare — Anastasia Popescu Boutique</title>
+<meta name="description" content="Explicăm pe înțelesul tuturor cele trei tehnici de curent folosite în electroepilare: termoliza, metoda galvanică și Blend — și cum alegem tehnica potrivită.">
+<meta name="theme-color" content="#ec3013">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Termoliză, Galvanic sau Blend? Tipurile de Curent în Electroepilare">
+<meta property="og:description" content="Trei tehnici, un singur scop: distrugerea definitivă a foliculului. Iată cum diferă și când se folosește fiecare.">
+<link rel="canonical" href="https://epilare-electroliza-cluj.ro/blog/tipuri-curent-electroepilare/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#201e1d; --red:#ec3013; --red-dark:#ae1800;
+    --paper:#f3f2f2; --blush:#fff2ef; --white:#ffffff;
+    --muted:#605d5d; --line:rgba(32,30,29,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--white); color:var(--ink);
+    font-family:'Archivo',system-ui,-apple-system,sans-serif;
+    font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--red); text-decoration:none}
+  a:hover{color:var(--red-dark)}
+  img{display:block; max-width:100%}
+  .wrap{max-width:760px; margin:0 auto; padding:0 24px}
+  .wrap-wide{max-width:1080px; margin:0 auto; padding:0 24px}
+  .eyebrow{
+    font-size:.72rem; font-weight:800; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--red);
+  }
+  h1,h2,h3{letter-spacing:-.02em; line-height:1.08; margin:0}
+  h2{font-size:clamp(1.5rem,4vw,2.1rem); font-weight:800; margin:2.2em 0 .6em}
+  h3{font-size:clamp(1.2rem,3vw,1.4rem); font-weight:800; margin:1.8em 0 .5em}
+  .lead{font-size:1.12rem; color:#3a3735; max-width:62ch}
+  p{margin:0 0 1.2em; color:#302d2c}
+  strong{color:var(--ink)}
+
+  .btn{
+    display:inline-flex; align-items:center; gap:.6em;
+    font-family:inherit; font-weight:800; font-size:1rem;
+    padding:.95em 1.5em; border-radius:0; border:2px solid var(--red);
+    cursor:pointer; transition:transform .15s ease, background .15s ease, color .15s ease;
+    text-transform:uppercase; letter-spacing:.04em; line-height:1;
+  }
+  .btn svg{width:1.25em; height:1.25em; flex:none}
+  .btn-primary{background:var(--red); color:var(--blush)}
+  .btn-primary:hover{background:var(--red-dark); border-color:var(--red-dark); color:#fff; transform:translateY(-2px)}
+  .btn-ghost{background:transparent; color:var(--ink); border-color:var(--ink)}
+  .btn-ghost:hover{background:var(--ink); color:var(--paper); transform:translateY(-2px)}
+  :focus-visible{outline:3px solid var(--red); outline-offset:3px}
+
+  .topnav{background:var(--paper); border-bottom:2px solid var(--line); padding:18px 0}
+  .topnav .wrap-wide{display:flex; align-items:center; justify-content:space-between; gap:16px}
+  .brandmark{font-size:.8rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--ink)}
+  .nav-links{display:flex; gap:20px; align-items:center}
+  .back-link{font-size:.85rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--muted)}
+  .back-link:hover{color:var(--red)}
+
+  .art-head{background:var(--paper); padding:clamp(40px,7vw,72px) 0}
+  .art-head h1{font-size:clamp(1.9rem,5.5vw,3rem); font-weight:800; margin:.4em 0 .5em}
+  .art-head .meta{color:var(--muted); font-size:.9rem; font-weight:600; margin-top:1rem}
+
+  article{padding:clamp(40px,7vw,72px) 0}
+  .key-points{
+    background:var(--blush); border-left:4px solid var(--red);
+    padding:24px 28px; margin:0 0 2.4em;
+  }
+  .key-points .eyebrow{margin-bottom:.6em; display:block}
+  .key-points ul{margin:0; padding-left:1.2em}
+  .key-points li{margin-bottom:.5em; color:#302d2c}
+  .key-points li:last-child{margin-bottom:0}
+
+  .toc{border-top:2px solid var(--line); border-bottom:2px solid var(--line); padding:20px 0; margin:2em 0 2.6em}
+  .toc .eyebrow{display:block; margin-bottom:.8em}
+  .toc ol{margin:0; padding-left:1.3em}
+  .toc li{margin-bottom:.4em}
+  .toc a{color:var(--ink); font-weight:600}
+  .toc a:hover{color:var(--red)}
+
+  .rule{height:2px; background:var(--line); border:0; margin:2.6em 0}
+
+  .inline-cta{
+    background:var(--ink); color:var(--paper); padding:32px; margin:2.6em 0;
+    display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px;
+  }
+  .inline-cta p{color:#d8d4d1; margin:0; max-width:40ch}
+  .inline-cta strong{color:#fff}
+
+  /* ---- Technique cards ---- */
+  .tech-cards{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:1.6em 0 2em}
+  .tech-card{background:var(--paper); padding:22px 20px; border-top:4px solid var(--red)}
+  .tech-card h3{font-size:1.05rem; margin:0 0 .5em}
+  .tech-card p{font-size:.92rem; margin:0; color:#3a3735}
+  .tech-card .badge{font-size:.7rem; font-weight:800; text-transform:uppercase; letter-spacing:.05em; color:var(--red); margin-bottom:.5em; display:block}
+  @media(max-width:700px){ .tech-cards{grid-template-columns:1fr} }
+
+  /* ---- Comparison table ---- */
+  .cmp-table{width:100%; border-collapse:collapse; margin:1.6em 0 2em; font-size:.94rem}
+  .cmp-table caption{caption-side:top; text-align:left; font-weight:800; margin-bottom:.6em}
+  .cmp-table th, .cmp-table td{border:2px solid var(--line); padding:11px 13px; text-align:left; vertical-align:top}
+  .cmp-table thead th{background:var(--ink); color:#fff; font-weight:800; text-transform:uppercase; font-size:.74rem; letter-spacing:.04em}
+  .cmp-table tbody th{background:var(--paper); font-weight:800; white-space:nowrap}
+  .cmp-table td{color:#302d2c}
+  @media(max-width:600px){
+    .cmp-table{font-size:.84rem}
+    .cmp-table th, .cmp-table td{padding:8px 9px}
+  }
+
+  .faq{border-top:2px solid var(--line); margin-top:1em}
+  details{border-bottom:2px solid var(--line)}
+  summary{
+    list-style:none; cursor:pointer; padding:22px 0; font-weight:800;
+    font-size:1.05rem; display:flex; justify-content:space-between; gap:20px; align-items:center;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary .plus{color:var(--red); font-size:1.5rem; line-height:1; transition:transform .2s ease; flex:none}
+  details[open] summary .plus{transform:rotate(45deg)}
+  details p{margin:0 0 22px; color:#3a3735; max-width:66ch}
+
+  .closing{background:var(--paper); border-left:4px solid var(--ink); padding:24px 28px; margin:2.4em 0}
+  .closing p:last-child{margin-bottom:0}
+
+  .contact{background:var(--red); color:var(--blush)}
+  .contact .eyebrow{color:#ffd7cd}
+  .contact h2{color:#fff; margin:.3em 0 .5em}
+  .contact .lead{color:#ffe4dd}
+  .contact-cta{display:flex; flex-wrap:wrap; gap:14px; margin-top:1.8rem}
+  .contact .btn-primary{background:#fff; color:var(--red); border-color:#fff}
+  .contact .btn-primary:hover{background:var(--ink); color:#fff; border-color:var(--ink)}
+  .contact .btn-ghost{color:#fff; border-color:#fff}
+  .contact .btn-ghost:hover{background:#fff; color:var(--red)}
+
+  footer{background:var(--ink); color:#b8b3b0; padding:34px 0; font-size:.85rem}
+  footer .wrap-wide{display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px}
+  footer strong{color:#fff; letter-spacing:.08em; text-transform:uppercase; font-size:.8rem}
+  footer a{color:#fff}
+
+  @media(max-width:600px){
+    .inline-cta{flex-direction:column; align-items:flex-start}
+  }
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap-wide">
+    <div class="brandmark">Anastasia Popescu Boutique</div>
+    <div class="nav-links">
+      <a class="back-link" href="/blog/">Toate articolele</a>
+      <a class="back-link" href="/">Acasă</a>
+    </div>
+  </div>
+</nav>
+
+<header class="art-head">
+  <div class="wrap">
+    <div class="eyebrow">Tehnic</div>
+    <h1>Termoliză, galvanic sau Blend? Tipurile de curent în electroepilare</h1>
+    <p class="lead">Trei tehnici diferite, un singur scop: distrugerea definitivă a foliculului. Îți explicăm cum diferă și când folosim fiecare.</p>
+    <div class="meta">Anastasia Popescu Boutique · Cluj-Napoca</div>
+  </div>
+</header>
+
+<article>
+  <div class="wrap">
+    <p>„Electroliză” e termenul generic pe care îl folosim cu toții pentru epilarea definitivă prin curent electric — dar, tehnic vorbind, sub această umbrelă există trei metode distincte, fiecare cu propriul mecanism de acțiune. Alegerea tehnicii potrivite pentru fiecare fir nu e întâmplătoare: depinde de grosimea firului, de curbura foliculului și de zona tratată.</p>
+
+    <p>În acest articol intrăm în detaliu tehnic — pe înțelesul tuturor, fără jargon inutil — despre cele trei tipuri de curent folosite în electroepilare: termoliza, metoda galvanică și tehnica Blend, care le combină pe amândouă.</p>
+
+    <div class="key-points">
+      <span class="eyebrow">Concluzii cheie</span>
+      <ul>
+        <li>Înțelegi diferența fundamentală dintre termoliză, metoda galvanică și Blend, ca mecanism de acțiune asupra foliculului.</li>
+        <li>Afli de ce niciuna dintre cele trei tehnici nu e „superioară universal” — fiecare are contextul în care funcționează cel mai bine.</li>
+        <li>Descoperi cum alegerea tehnicii se face în funcție de tipul firului, nu după o preferință fixă a specialistului.</li>
+        <li>Vezi de ce un aparat care oferă toate cele trei tehnici, ca cel folosit la Anastasia Popescu Boutique, oferă flexibilitate reală de tratament.</li>
+        <li>Înțelegi ce înseamnă asta concret pentru tine, în timpul unei ședințe.</li>
+      </ul>
+    </div>
+
+    <nav class="toc">
+      <span class="eyebrow">Cuprins</span>
+      <ol>
+        <li><a href="#trei-tehnici">Trei tehnici, un singur scop</a></li>
+        <li><a href="#termoliza">Termoliza: viteză prin căldură</a></li>
+        <li><a href="#galvanic">Metoda galvanică: precizie chimică</a></li>
+        <li><a href="#blend">Blend: combinația celor două</a></li>
+        <li><a href="#cum-alegem">Cum alegem tehnica potrivită firului tău</a></li>
+        <li><a href="#faq">Întrebări frecvente</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="trei-tehnici">Trei tehnici, un singur scop</h2>
+    <p>Indiferent de tehnica folosită, obiectivul rămâne identic: distrugerea papilei dermice, adică sursa de nutriție și regenerare a firului de păr. Diferența dintre cele trei metode stă exclusiv în modul în care se ajunge la acest rezultat — prin căldură, prin reacție chimică sau prin combinația celor două.</p>
+
+    <div class="tech-cards">
+      <div class="tech-card">
+        <span class="badge">Termoliză</span>
+        <h3>Curent de înaltă frecvență</h3>
+        <p>Generează căldură rapidă la baza foliculului. Coagulează celulele germinative aproape instantaneu.</p>
+      </div>
+      <div class="tech-card">
+        <span class="badge">Galvanic</span>
+        <h3>Curent continuu</h3>
+        <p>Produce o reacție chimică ce formează hidroxid de sodiu, neutralizând rădăcina firului treptat.</p>
+      </div>
+      <div class="tech-card">
+        <span class="badge">Blend</span>
+        <h3>Combinația ambelor</h3>
+        <p>Folosește simultan căldura termolizei și acțiunea chimică a curentului galvanic.</p>
+      </div>
+    </div>
+
+    <h2 id="termoliza">Termoliza: viteză prin căldură</h2>
+    <p>Termoliza folosește un curent alternativ de înaltă frecvență, care generează căldură la baza foliculului. Acest proces, numit electrocoagulare, distruge celulele germinative aproape instantaneu — motiv pentru care termoliza este, în general, tehnica cea mai rapidă dintre cele trei, per fir tratat.</p>
+
+    <h3>Când e potrivită termoliza</h3>
+    <p>Este eficientă mai ales pe firele drepte, cu foliculi ușor accesibili, unde căldura se poate concentra rapid și precis la baza rădăcinii. Rapiditatea ei o face utilă pentru zone cu densitate mai mare, unde numărul de fire de tratat e ridicat.</p>
+
+    <h2 id="galvanic">Metoda galvanică: precizie chimică</h2>
+    <p>Metoda galvanică — cea originală, folosită încă din 1875 — se bazează pe curent continuu. Reacția electrochimică rezultată formează o cantitate mică de hidroxid de sodiu direct la baza foliculului, o substanță care neutralizează chimic capacitatea de regenerare a rădăcinii.</p>
+
+    <h3>Când e potrivită metoda galvanică</h3>
+    <p>Fiind o acțiune chimică, nu termică, e adesea preferată pentru foliculii curbați sau mai adânci, unde căldura termolizei s-ar putea disipa înainte de a ajunge complet la rădăcină. Acțiunea ei e mai lentă per fir, dar extrem de temeinică.</p>
+
+    <h2 id="blend">Blend: combinația celor două</h2>
+    <p>Metoda Blend combină simultan curentul de înaltă frecvență al termolizei cu curentul continuu al metodei galvanice. Practic, beneficiezi de coagularea termică rapidă și, în același timp, de acțiunea chimică profundă a curentului galvanic — o combinație gândită pentru a maximiza rata de succes pe firele mai dificile.</p>
+
+    <div class="inline-cta">
+      <p><strong>Vrei să știi ce tehnică e potrivită pentru firele tale?</strong> La consultație analizăm zona și stabilim abordarea corectă, fir cu fir.</p>
+      <a class="btn btn-primary" href="https://wa.me/40750497312?text=Bun%C4%83!%20A%C8%99%20dori%20o%20consulta%C8%9Bie%20pentru%20epilare%20prin%20electroliz%C4%83." target="_blank" rel="noopener">Scrie pe WhatsApp</a>
+    </div>
+
+    <h3>De ce Blend e des considerată o alegere versatilă</h3>
+    <p>Pentru firele groase, pentru foliculii curbați sau pentru zonele unde alte tehnici au avut rezultate inconstante în trecut, Blend oferă adesea un echilibru bun între eficiență și precizie. Nu înlocuiește complet celelalte două tehnici — rămâne o a treia opțiune, aleasă în funcție de context, nu implicit „cea mai bună” pentru orice situație.</p>
+
+    <table class="cmp-table">
+      <caption>Comparație rapidă a celor trei tehnici</caption>
+      <thead>
+        <tr><th>Tehnică</th><th>Mecanism</th><th>Potrivită mai ales pentru</th></tr>
+      </thead>
+      <tbody>
+        <tr><th>Termoliză</th><td>Căldură, curent de înaltă frecvență</td><td>Fire drepte, ședințe cu densitate mare</td></tr>
+        <tr><th>Galvanic</th><td>Reacție chimică, curent continuu</td><td>Foliculi curbați sau mai adânci</td></tr>
+        <tr><th>Blend</th><td>Căldură + reacție chimică, combinate</td><td>Fire groase sau rezistente la alte tehnici</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="cum-alegem">Cum alegem tehnica potrivită firului tău</h2>
+    <p>Decizia nu se ia o singură dată, pentru toată ședința — se face fir cu fir, în funcție de ce observă specialistul direct la fața locului: grosimea firului, unghiul de creștere, adâncimea foliculului și zona tratată. Un fir de pe bărbie, gros și drept, poate răspunde diferit față de un fir fin și curbat de pe sprânceană.</p>
+
+    <p>Tocmai de aceea, un aparat care oferă acces la toate cele trei tehnici — precum cel folosit la Anastasia Popescu Boutique — permite o flexibilitate reală. Specialistul nu e limitat la o singură abordare, ci alege mereu tehnica adecvată firului din fața lui, nu doar tehnica disponibilă pe echipamentul respectiv.</p>
+
+    <div class="closing">
+      <p><strong>Nu există o singură tehnică „cea mai bună” — există tehnica potrivită firului tău.</strong> Termoliza, metoda galvanică și Blend nu sunt în competiție unele cu altele; sunt trei instrumente complementare, fiecare cu rolul lui. Un specialist bine pregătit, cu acces la toate trei, poate adapta tratamentul exact la ce are nevoie pielea ta.</p>
+    </div>
+
+    <h2 id="faq">Întrebări frecvente despre tehnicile de curent</h2>
+    <div class="faq">
+      <details>
+        <summary>Care dintre cele trei tehnici este cea mai eficientă?<span class="plus">+</span></summary>
+        <p>Niciuna nu e universal superioară — fiecare are contextul unde funcționează cel mai bine. Termoliza e rapidă pe fire drepte, metoda galvanică e temeinică pe foliculi curbați, iar Blend combină avantajele ambelor pentru firele mai dificile.</p>
+      </details>
+      <details>
+        <summary>Se schimbă tehnica în timpul aceleiași ședințe?<span class="plus">+</span></summary>
+        <p>Da, decizia se ia fir cu fir, în funcție de ce observă specialistul — grosimea, unghiul și adâncimea fiecărui folicul pot varia chiar și în aceeași zonă.</p>
+      </details>
+      <details>
+        <summary>Metoda galvanică e mai dureroasă decât termoliza?<span class="plus">+</span></summary>
+        <p>Senzația diferă mai degrabă în funcție de durata aplicării decât de tipul de curent — metoda galvanică poate necesita un timp ceva mai lung per fir, dar intensitatea se ajustează individual pentru confortul tău.</p>
+      </details>
+      <details>
+        <summary>De ce nu se folosește doar tehnica Blend, dacă e cea mai versatilă?<span class="plus">+</span></summary>
+        <p>Pentru că, pe firele unde termoliza sau metoda galvanică pură funcționează deja excelent, nu e nevoie de o abordare combinată. Alegerea tehnicii se face pentru eficiență maximă, nu după o preferință fixă.</p>
+      </details>
+      <details>
+        <summary>Toate aparatele de electroliză oferă toate cele trei tehnici?<span class="plus">+</span></summary>
+        <p>Nu, multe aparate mai simple oferă doar una sau două dintre tehnici. Un aparat care le integrează pe toate trei, cum e cel folosit la boutique-ul nostru, oferă flexibilitate mai mare specialistului.</p>
+      </details>
+      <details>
+        <summary>Ce tehnică se folosește pentru firele albe sau blonde?<span class="plus">+</span></summary>
+        <p>Alegerea nu depinde de culoarea firului — toate cele trei tehnici funcționează independent de pigment. Decizia se bazează pe grosimea și forma foliculului, nu pe nuanța firului.</p>
+      </details>
+    </div>
+  </div>
+</article>
+
+<hr class="rule" style="max-width:760px;margin-left:auto;margin-right:auto">
+
+<section class="contact" id="programare">
+  <div class="wrap">
+    <div class="eyebrow">Programare</div>
+    <h2>Hai să stabilim prima ta ședință.</h2>
+    <p class="lead">Scrie-mi pe WhatsApp și îți răspund cu detaliile și cu un moment potrivit pentru consultație. Programările se fac exclusiv în avans.</p>
+    <div class="contact-cta">
+      <a class="btn btn-primary" href="https://wa.me/40750497312?text=Bun%C4%83!%20A%C8%99%20dori%20o%20programare." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.62 14.02c-.27.76-1.57 1.46-2.2 1.55-.56.08-1.27.12-2.05-.13-.48-.14-1.08-.32-1.86-.62-3.26-1.28-5.4-4.57-5.56-4.79-.16-.22-1.33-1.76-1.33-3.36s.84-2.38 1.14-2.71c.3-.32.65-.4.87-.4h.61c.19 0 .46-.08.72.55.28.65.92 2.26 1 2.42.08.17.14.36.03.58-.11.22-.17.36-.33.55-.16.2-.34.43-.49.58-.17.16-.34.33-.15.66.19.33.85 1.4 1.82 2.27 1.25 1.11 2.3 1.46 2.63 1.62.33.17.52.14.71-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.74-.16.3.11 1.9.9 2.23 1.06.33.16.55.24.63.37.08.13.08.79-.19 1.55Z"/></svg>
+        Scrie pe WhatsApp
+      </a>
+      <a class="btn btn-ghost" href="/blog/">Vezi toate articolele</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap-wide">
+    <strong>Anastasia Popescu Boutique</strong>
+    <span>Epilare prin electroliză &amp; make-up · Doar pe bază de programare</span>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Termoliză, galvanic sau Blend? Tipurile de curent în electroepilare",
+  "description":"Explicăm pe înțelesul tuturor cele trei tehnici de curent folosite în electroepilare: termoliza, metoda galvanică și Blend — și cum alegem tehnica potrivită.",
+  "author":{"@type":"Organization","name":"Anastasia Popescu Boutique"},
+  "publisher":{"@type":"Organization","name":"Anastasia Popescu Boutique"},
+  "mainEntityOfPage":"https://epilare-electroliza-cluj.ro/blog/tipuri-curent-electroepilare/"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Care dintre cele trei tehnici este cea mai eficientă?","acceptedAnswer":{"@type":"Answer","text":"Niciuna nu e universal superioară; fiecare are contextul unde funcționează cel mai bine, în funcție de tipul firului."}},
+    {"@type":"Question","name":"Se schimbă tehnica în timpul aceleiași ședințe?","acceptedAnswer":{"@type":"Answer","text":"Da, decizia se ia fir cu fir, în funcție de grosimea, unghiul și adâncimea fiecărui folicul."}},
+    {"@type":"Question","name":"Metoda galvanică e mai dureroasă decât termoliza?","acceptedAnswer":{"@type":"Answer","text":"Senzația diferă în funcție de durata aplicării mai degrabă decât de tipul de curent; intensitatea se ajustează pentru confort."}},
+    {"@type":"Question","name":"De ce nu se folosește doar tehnica Blend?","acceptedAnswer":{"@type":"Answer","text":"Pentru că pe firele unde termoliza sau galvanicul pur funcționează deja bine, nu e nevoie de o abordare combinată."}},
+    {"@type":"Question","name":"Toate aparatele de electroliză oferă toate cele trei tehnici?","acceptedAnswer":{"@type":"Answer","text":"Nu, multe aparate simple oferă doar una sau două dintre tehnici."}},
+    {"@type":"Question","name":"Ce tehnică se folosește pentru firele albe sau blonde?","acceptedAnswer":{"@type":"Answer","text":"Toate cele trei tehnici funcționează independent de culoarea firului; decizia se bazează pe grosimea și forma foliculului."}}
+  ]
+}
+</script>
+</body>
+</html>
