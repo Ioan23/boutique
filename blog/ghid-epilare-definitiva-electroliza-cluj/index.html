@@ -56,19 +56,17 @@
   .btn-ghost:hover{background:var(--ink); color:var(--paper); transform:translateY(-2px)}
   :focus-visible{outline:3px solid var(--red); outline-offset:3px}
 
-  /* ---- Top nav ---- */
   .topnav{background:var(--paper); border-bottom:2px solid var(--line); padding:18px 0}
   .topnav .wrap-wide{display:flex; align-items:center; justify-content:space-between; gap:16px}
   .brandmark{font-size:.8rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--ink)}
+  .nav-links{display:flex; gap:20px; align-items:center}
   .back-link{font-size:.85rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--muted)}
   .back-link:hover{color:var(--red)}
 
-  /* ---- Article header ---- */
   .art-head{background:var(--paper); padding:clamp(40px,7vw,72px) 0}
   .art-head h1{font-size:clamp(1.9rem,5.5vw,3rem); font-weight:800; margin:.4em 0 .5em}
   .art-head .meta{color:var(--muted); font-size:.9rem; font-weight:600; margin-top:1rem}
 
-  /* ---- Article body ---- */
   article{padding:clamp(40px,7vw,72px) 0}
   .key-points{
     background:var(--blush); border-left:4px solid var(--red);
@@ -88,7 +86,6 @@
 
   .rule{height:2px; background:var(--line); border:0; margin:2.6em 0}
 
-  /* ---- Inline CTA ---- */
   .inline-cta{
     background:var(--ink); color:var(--paper); padding:32px; margin:2.6em 0;
     display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px;
@@ -96,7 +93,21 @@
   .inline-cta p{color:#d8d4d1; margin:0; max-width:40ch}
   .inline-cta strong{color:#fff}
 
-  /* ---- Contact (final CTA, same as homepage) ---- */
+  /* ---- FAQ (accordion) ---- */
+  .faq{border-top:2px solid var(--line); margin-top:1em}
+  details{border-bottom:2px solid var(--line)}
+  summary{
+    list-style:none; cursor:pointer; padding:22px 0; font-weight:800;
+    font-size:1.05rem; display:flex; justify-content:space-between; gap:20px; align-items:center;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary .plus{color:var(--red); font-size:1.5rem; line-height:1; transition:transform .2s ease; flex:none}
+  details[open] summary .plus{transform:rotate(45deg)}
+  details p{margin:0 0 22px; color:#3a3735; max-width:66ch}
+
+  .closing{background:var(--paper); border-left:4px solid var(--ink); padding:24px 28px; margin:2.4em 0}
+  .closing p:last-child{margin-bottom:0}
+
   .contact{background:var(--red); color:var(--blush)}
   .contact .eyebrow{color:#ffd7cd}
   .contact h2{color:#fff; margin:.3em 0 .5em}
@@ -110,6 +121,7 @@
   footer{background:var(--ink); color:#b8b3b0; padding:34px 0; font-size:.85rem}
   footer .wrap-wide{display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px}
   footer strong{color:#fff; letter-spacing:.08em; text-transform:uppercase; font-size:.8rem}
+  footer a{color:#fff}
 
   @media(max-width:600px){
     .inline-cta{flex-direction:column; align-items:flex-start}
@@ -121,7 +133,10 @@
 <nav class="topnav">
   <div class="wrap-wide">
     <div class="brandmark">Anastasia Popescu Boutique</div>
-    <a class="back-link" href="/">← Înapoi la site</a>
+    <div class="nav-links">
+      <a class="back-link" href="/blog/">Toate articolele</a>
+      <a class="back-link" href="/">Acasă</a>
+    </div>
   </div>
 </nav>
 
@@ -129,7 +144,7 @@
   <div class="wrap">
     <div class="eyebrow">Ghid</div>
     <h1>Ghid Complet: Epilare Definitivă prin Electroliză în Cluj [2026]</h1>
-    <p class="lead">De ce electroliza este singura metodă de epilare recunoscută oficial ca 100% permanentă — și cum decurge procesul la Anastasia Popescu Boutique.</p>
+    <p class="lead">De ce electroliza este singura metodă de epilare recunoscută oficial ca permanentă — și cum decurge procesul la Anastasia Popescu Boutique.</p>
     <div class="meta">Anastasia Popescu Boutique · Cluj-Napoca</div>
   </div>
 </header>
@@ -138,7 +153,7 @@
   <div class="wrap">
     <p>Cea mai avansată tehnologie laser din lume are o limită biologică peste care nu poate trece: nu „vede” firele de păr lipsite de pigment. Știm cât de epuizant este să investești timp și resurse în ședințe repetate, doar pentru a constata că firele albe, blonde sau roșcate de pe față rămân neclintite. Iritațiile constante și foliculita cauzate de pensat sau ceară nu fac decât să adauge un strat suplimentar de disconfort în ritualul tău de îngrijire. Meriți o soluție care nu doar promite reducerea pilozității, ci garantează eliminarea ei totală, motiv pentru care am pregătit acest ghid complet despre epilare definitiva electroliza cluj.</p>
 
-    <p>La Anastasia Popescu Boutique, abordăm estetica prin prisma preciziei meticuloase, oferindu-ți singura metodă recunoscută oficial ca fiind 100% permanentă. În rândurile ce urmează, vei înțelege exact cum funcționează distrugerea fir cu fir a foliculului pilos și de ce această procedură riguroasă reprezintă singura investiție cu rezultate pe viață. Descoperă cum expertiza noastră tehnică și atenția exclusivă la detalii pot transforma definitiv aspectul pielii tale, oferindu-ți siguranța unui rezultat care durează o întreagă existență, într-un mediu controlat unde calitatea primează în fața vitezei.</p>
+    <p>La Anastasia Popescu Boutique, abordăm estetica prin prisma preciziei meticuloase, oferindu-ți singura metodă recunoscută oficial ca fiind 100% permanentă. În rândurile ce urmează, vei înțelege exact cum funcționează distrugerea fir cu fir a foliculului pilos și de ce această procedură riguroasă reprezintă singura investiție cu rezultate pe viață.</p>
 
     <div class="key-points">
       <span class="eyebrow">Concluzii cheie</span>
@@ -159,13 +174,14 @@
         <li><a href="#electroliza-vs-laser">Electroliză vs. Laser: Care este investiția corectă pentru tine?</a></li>
         <li><a href="#protocol">Protocolul de tratament la Anastasia Popescu Boutique: La ce să te aștepți?</a></li>
         <li><a href="#de-ce-noi">De ce să alegi Anastasia Popescu Boutique pentru epilare definitivă în Cluj?</a></li>
+        <li><a href="#faq">Întrebări frecvente</a></li>
       </ol>
     </nav>
 
     <h2 id="ce-este">Ce este epilarea definitivă prin electroliză și cum funcționează?</h2>
-    <p>Electroliza reprezintă singura soluție prin care centrul de regenerare al firului de păr este anihilat complet cu ajutorul unui impuls electric controlat. Spre deosebire de metodele temporare, această procedură vizează direct papila dermică, sursa de nutriție a firului de păr. Este o tehnică de o precizie microscopică, realizată fir cu fir, care asigură că foliculul tratat nu va mai produce niciodată pilozitate. Această abordare meticuloasă face ca procesul de epilare definitiva electroliza cluj să fie alegerea supremă pentru persoanele care caută rezultate finale, nu doar ameliorări periodice ale densității firelor de păr.</p>
+    <p>Electroliza reprezintă singura soluție prin care centrul de regenerare al firului de păr este anihilat complet cu ajutorul unui impuls electric controlat. Spre deosebire de metodele temporare, această procedură vizează direct papila dermică, sursa de nutriție a firului de păr. Este o tehnică de o precizie microscopică, realizată fir cu fir, care asigură că foliculul tratat nu va mai produce niciodată pilozitate.</p>
 
-    <p>Organizații internaționale de prestigiu, precum FDA (Food and Drug Administration) și AMA (American Medical Association), au clasificat electroliza drept singura metodă de îndepărtare permanentă a părului. În timp ce sistemele bazate pe lumină, cum este laserul, sunt omologate oficial doar pentru „reducerea permanentă” a pilozității, electroliza elimină total capacitatea biologică de creștere. Este o distincție juridică și științifică esențială. Laserul depinde de prezența melaninei, însă electroliza funcționează independent de culoarea firului sau a pielii, oferind o soluție universală.</p>
+    <p>Organizații internaționale de prestigiu, precum FDA (Food and Drug Administration) și AMA (American Medical Association), au clasificat electroliza drept singura metodă de îndepărtare permanentă a părului. În timp ce sistemele bazate pe lumină, cum este laserul, sunt omologate oficial doar pentru „reducerea permanentă” a pilozității, electroliza elimină total capacitatea biologică de creștere.</p>
 
     <h3>Mecanismul electroepilării: Termoliză vs. Galvanic</h3>
     <p>Tehnologia modernă ne permite să adaptăm tipul de curent în funcție de structura firului de păr și de zona tratată. Termoliza utilizează curent alternativ de înaltă frecvență pentru a genera căldură la baza foliculului. Acest proces de electrocoagulare distruge celulele germinative aproape instantaneu. Metoda galvanică se bazează pe curent continuu, care declanșează o reacție chimică în interiorul foliculului, neutralizând rădăcina prin formarea unei cantități infime de hidroxid de sodiu.</p>
@@ -173,23 +189,19 @@
     <p>Metoda Blend reprezintă vârful de lance în domeniu, fiind tehnica pe care o utilizăm adesea pentru eficiență maximă. Aceasta combină rapiditatea termolizei cu puterea chimică a curentului galvanic. Este ideală pentru firele de păr groase sau pentru foliculii curbați, unde precizia este vitală pentru succesul tratamentului.</p>
 
     <h3>De ce este electroliza sigură pentru piele?</h3>
-    <p>Siguranța este un pilon fundamental la Anastasia Popescu Boutique. Procedura nu implică perforarea pielii, deoarece sonda extrem de fină este introdusă prin orificiul natural al foliculului. Utilizăm exclusiv sonde sterile, de unică folosință, pentru fiecare client în parte. Această rigoare elimină orice risc de contaminare sau infecție.</p>
-
-    <p>Precizia tehnică ne permite să izolăm acțiunea curentului strict la nivelul rădăcinii. Astfel, țesutul înconjurător rămâne neafectat. Dispozitivele noastre permit reglarea intensității în timp real, oferind un control total asupra confortului. Rezultatul este o piele impecabilă, fără riscul de arsuri sau cicatrici, indiferent de cât de sensibilă este zona vizată.</p>
+    <p>Siguranța este un pilon fundamental la Anastasia Popescu Boutique. Procedura nu implică perforarea pielii, deoarece sonda extrem de fină este introdusă prin orificiul natural al foliculului. Utilizăm exclusiv sonde sterile, de unică folosință, pentru fiecare client în parte. Precizia tehnică ne permite să izolăm acțiunea curentului strict la nivelul rădăcinii, astfel încât țesutul înconjurător rămâne neafectat.</p>
 
     <h2 id="eficienta">Eficiență garantată pentru orice tip de păr: Soluția pentru firele albe și blonde</h2>
-    <p>Tehnologia laser, deși eficientă pentru contrastul ridicat dintre piele și păr, se lovește de o barieră biologică atunci când pigmentul lipsește. Firul de păr alb, blond sau roșcat rămâne invizibil pentru fasciculul de lumină, lăsând persoanele cu aceste trăsături fără o soluție viabilă în clinicile laser tradiționale. Electroliza elimină complet acest impediment. Deoarece acționează prin energie electrică livrată direct în canalul folicular, culoarea părului sau nuanța pielii nu influențează succesul tratamentului. Este o metodă universală, eficientă de la fototipul I până la fototipul VI, fiind recunoscută drept standardul de aur pentru epilare definitiva electroliza cluj în cazul pacienților care nu sunt candidați pentru laser sau care au pielea închisă la culoare.</p>
+    <p>Tehnologia laser, deși eficientă pentru contrastul ridicat dintre piele și păr, se lovește de o barieră biologică atunci când pigmentul lipsește. Firul de păr alb, blond sau roșcat rămâne invizibil pentru fasciculul de lumină, lăsând persoanele cu aceste trăsături fără o soluție viabilă în clinicile laser tradiționale. Electroliza elimină complet acest impediment, fiind eficientă de la fototipul I până la fototipul VI.</p>
 
     <h3>Epilarea definitivă a firelor albe și blonde în Cluj</h3>
-    <p>La Anastasia Popescu Boutique, primim frecvent clienți care au parcurs deja zeci de ședințe de IPL fără succes pe zonele cu păr deschis. În cadrul unei sesiuni de epilare definitiva electroliza cluj, fiecare fir alb sau blond este vizualizat sub lupă și tratat individual cu o precizie tehnică riguroasă. Această abordare este critică pentru zonele dependente de activitatea hormonală, cum sunt bărbia, gâtul sau zona mustății. Aici, firele pot fi izolate, dar extrem de rezistente la metodele fotodinamice. Nu ne limităm doar la estetica feminină. Bărbații apelează la serviciile noastre pentru definirea conturului bărbii sau eliminarea firelor albe rătăcite de pe pomeți sau urechi, obținând un aspect impecabil pe care nicio altă metodă nu îl poate garanta pe viață.</p>
+    <p>La Anastasia Popescu Boutique, primim frecvent clienți care au parcurs deja zeci de ședințe de IPL fără succes pe zonele cu păr deschis. În cadrul unei sesiuni de epilare definitiva electroliza cluj, fiecare fir alb sau blond este vizualizat sub lupă și tratat individual cu o precizie tehnică riguroasă. Nu ne limităm doar la estetica feminină — bărbații apelează la serviciile noastre pentru definirea conturului bărbii sau eliminarea firelor albe rătăcite de pe pomeți sau urechi.</p>
 
     <h3>Tratarea părului fin și a pufului facial</h3>
-    <p>Părul fin, cunoscut popular sub numele de puf, reprezintă o provocare majoră în estetica facială modernă. Un risc adesea ignorat al tratamentelor laser pe față este hipertrichoza paradoxală, un fenomen unde căldura difuză stimulează creșterea firelor de păr dormande din vecinătate. Electroliza elimină acest risc prin natura sa punctuală. Tratând fir cu fir, energia este localizată strict în interiorul foliculului vizat, fără a afecta celulele din zonele adiacente. Rezultatul final nu este doar absența părului, ci și o îmbunătățire a texturii pielii, care devine mai fină și mai luminoasă. Dacă te confrunți cu fire de păr care nu răspund la alte tratamente, poți analiza opțiunile de epilare prin electroliză disponibile în cabinetul nostru, unde fiecare procedură este adaptată sensibilității tale și ritmului natural de regenerare a pielii.</p>
+    <p>Un risc adesea ignorat al tratamentelor laser pe față este hipertrichoza paradoxală, un fenomen unde căldura difuză stimulează creșterea firelor de păr dormande din vecinătate. Electroliza elimină acest risc prin natura sa punctuală. Tratând fir cu fir, energia este localizată strict în interiorul foliculului vizat, fără a afecta celulele din zonele adiacente.</p>
 
     <h2 id="electroliza-vs-laser">Electroliză vs. Laser: Care este investiția corectă pentru tine?</h2>
-    <p>Alegerea între tehnologia laser și electroepilare nu ar trebui să se bazeze doar pe viteza unei ședințe, ci pe rezultatul final dorit și pe biologia firului tău de păr. În timp ce laserul este eficient pentru reducerea rapidă a densității pe suprafețe mari, acesta rămâne o metodă de gestionare pe termen lung, necesitând ședințe de întreținere anuale sau semestriale pentru tot restul vieții. În schimb, serviciul de epilare definitiva electroliza cluj oferă certitudinea că, odată ce un folicul a fost tratat corect, acesta nu va mai produce păr niciodată. Este diferența dintre a „tunde” rădăcina cu lumină și a o elimina complet prin energie electrică.</p>
-
-    <p>Analiza costurilor relevă o realitate adesea ignorată: investiția în electroliză este una finită. Deși procesul necesită mai multă răbdare, deoarece lucrăm meticulos, fir cu fir, numărul total de ore necesare pentru a curăța o zonă este limitat. Odată finalizat protocolul, cheltuielile tale cu epilarea pentru acea zonă devin zero. Mulți dintre clienții noștri din Cluj ajung la Anastasia Popescu Boutique tocmai după ce au finalizat cure de laser, constatând că firele rezistente, puful facial sau firele depigmentate au rămas active. Pentru aceștia, electroliza nu este doar o alternativă, ci soluția logică de finalizare a drumului către o piele impecabilă.</p>
+    <p>Alegerea între tehnologia laser și electroepilare nu ar trebui să se bazeze doar pe viteza unei ședințe, ci pe rezultatul final dorit. În timp ce laserul este eficient pentru reducerea rapidă a densității pe suprafețe mari, acesta rămâne o metodă de gestionare pe termen lung, necesitând ședințe de întreținere anuale sau semestriale pentru tot restul vieții. Serviciul de epilare definitiva electroliza cluj oferă certitudinea că, odată ce un folicul a fost tratat corect, acesta nu va mai produce păr niciodată.</p>
 
     <div class="inline-cta">
       <p><strong>Nu ești sigură care metodă ți se potrivește?</strong> Discutăm gratuit la consultație despre zona ta, tipul firelor și cel mai bun plan pentru tine.</p>
@@ -197,16 +209,75 @@
     </div>
 
     <h3>Când să alegi electroliza în detrimentul laserului?</h3>
-    <p>Electroliza este indispensabilă atunci când precizia chirurgicală este prioritară. De exemplu, modelarea sprâncenelor este o zonă interzisă laserului din cauza riscurilor oculare, însă prin electroepilare putem sculpta conturul perfect, eliminând definitiv firele nedorite. De asemenea, dacă te confrunți cu fire de păr izolate pe sâni, abdomen sau față, nu are sens să expui întreaga zonă la radiația laser. Tratarea punctuală previne stimularea foliculilor dormanzi adiacenți, oferindu-ți siguranța că nu vei declanșa o creștere paradoxală a părului în zonele vecine.</p>
+    <p>Electroliza este indispensabilă atunci când precizia chirurgicală este prioritară. De exemplu, modelarea sprâncenelor este o zonă interzisă laserului din cauza riscurilor oculare, însă prin electroepilare putem sculpta conturul perfect, eliminând definitiv firele nedorite.</p>
 
     <h3>Avantajele pe termen lung ale electroepilării</h3>
-    <p>Dincolo de eliminarea părului, beneficiul major este sănătatea pielii. Electroliza este singura metodă care garantează zero riscuri de arsuri pigmentare pentru persoanele cu tenul închis sau expus la soare, deoarece curentul nu caută culoarea, ci structura fizică a foliculului. Mai mult, este tratamentul curativ pentru foliculită. Prin distrugerea rădăcinii, eliminăm cauza inflamațiilor și a firelor crescute sub piele, lăsând în urmă o textură fină și uniformă. Această libertate totală față de aparatul de ras sau ceară transformă epilare definitiva electroliza cluj într-o investiție în confortul tău zilnic și în încrederea de sine.</p>
+    <p>Dincolo de eliminarea părului, beneficiul major este sănătatea pielii. Electroliza este singura metodă care garantează zero riscuri de arsuri pigmentare pentru persoanele cu tenul închis sau expus la soare, deoarece curentul nu caută culoarea, ci structura fizică a foliculului. Mai mult, este tratamentul curativ pentru foliculită.</p>
 
     <h2 id="protocol">Protocolul de tratament la Anastasia Popescu Boutique: La ce să te aștepți?</h2>
-    <p>Fiecare parcurs începe cu o consultație în care discutăm zona vizată, tipul firelor și așteptările tale, ca să știi exact la ce te aștepți încă din prima ședință. Urmează ședința propriu-zisă, în care tratăm unul câte unul firele aflate în faza activă de creștere — timpul necesar depinde de mărimea zonei. Pentru că firele de păr cresc în cicluri, sunt necesare mai multe ședințe, la intervale stabilite împreună, până ajungem la rezultatul definitiv.</p>
+    <p>Experiența la Anastasia Popescu Boutique începe întotdeauna cu o consultație riguroasă. Nu tratăm doar fire de păr, ci analizăm în detaliu fiziologia pielii tale și istoricul tău hormonal. Pregătirea pentru prima ședință începe acasă, cu cel puțin 48 de ore înainte — hidratarea optimă este vitală. Firul de păr trebuie să aibă o lungime de aproximativ 2-3 milimetri pentru a permite o manipulare precisă.</p>
+
+    <p>Senzația din timpul procedurii este adesea descrisă ca o pișcătură scurtă sau o senzație de căldură localizată. Deși pragul de sensibilitate diferă pentru fiecare persoană, experiența noastră tehnică ne permite să ajustăm parametrii echipamentului în timp real.</p>
+
+    <h3>Etapele unei ședințe de epilare prin electroliză</h3>
+    <p>Fiecare sesiune respectă un protocol de igienă strict. Începem prin curățarea și dezinfectarea minuțioasă a zonei de lucru cu soluții profesionale. Utilizăm exclusiv sonde sterile, de unică folosință, desigilate în fața ta. Inserția sondei se face cu ajutorul unei lupe cu factor mare de mărire, glisând direct în orificiul folicular fără a perfora pielea. Un indicator clar al unei proceduri reușite este faptul că firul alunecă afară fără nicio rezistență, semn că rădăcina a fost neutralizată complet.</p>
+
+    <h3>Recomandări esențiale post-epilare</h3>
+    <p>Vindecarea impecabilă a pielii depinde în mare măsură de respectarea protocolului de îngrijire post-procedură. Primele 48 de ore sunt critice pentru regenerarea țesutului. Recomandăm evitarea expunerii la soare și aplicarea obligatorie a unei creme cu protecție solară SPF 50+ pe zonele tratate. De asemenea, este indicat să eviți activitățile fizice care produc transpirație excesivă sau utilizarea produselor cosmetice agresive în zona epilată.</p>
+
+    <p>Planificarea ședințelor este un alt factor cheie. Electroliza este eficientă doar atunci când firele de păr se află în faza anagenă (faza de creștere activă). Din acest motiv, programările sunt stabilite metodic, la intervale precise, pentru a surprinde fiecare folicul în momentul optim pentru distrugere.</p>
 
     <h2 id="de-ce-noi">De ce să alegi Anastasia Popescu Boutique pentru epilare definitivă în Cluj?</h2>
-    <p>La Anastasia Popescu Boutique, exclusivitatea și atenția meticuloasă la detalii înlocuiesc soluțiile de masă. Lucrăm doar pe bază de programare, într-un mediu controlat, cu sonde sterile de unică folosință și un ritm adaptat sensibilității fiecărui client. Dacă ai încercat deja alte metode fără rezultatul dorit sau vrei direct o soluție cu adevărat permanentă, te așteptăm pentru o consultație.</p>
+    <p>Alegerea unui cabinet specializat pentru epilare definitiva electroliza cluj este o decizie care privește atât estetica personală, cât și siguranța medicală a pielii tale. La Anastasia Popescu Boutique, am ales să ne distanțăm de modelul clinicilor de masă pentru a oferi o experiență autentică de tip boutique, unde atenția noastră este concentrată integral pe un singur client.</p>
+
+    <p>Locația noastră din Cluj-Napoca a fost selectată pentru a oferi un echilibru perfect între accesibilitatea centrală și discreția necesară unor astfel de proceduri. Cabinetul funcționează într-un mediu controlat, unde standardele de igienă sunt impecabile, iar aparatura de ultimă generație ne permite să intervenim cu o rigoare microscopică.</p>
+
+    <h3>Exclusivitate prin programare: Timpul tău este prețios</h3>
+    <p>Politica noastră strictă „fără walk-in” nu este o barieră, ci o garanție a respectului pentru timpul și intimitatea ta. Această rigoare ne permite să asigurăm o punctualitate deplină și să alocăm resursele necesare pentru a pregăti spațiul conform celor mai înalte protocoale înainte de fiecare vizită. Nu facem promisiuni nerealiste — evaluăm istoricul tău fiziologic și stabilim așteptări concrete încă de la prima întâlnire.</p>
+
+    <h3>Pasiunea pentru detaliu: De la machiaj la electroepilare</h3>
+    <p>Expertiza Anastasiei Popescu în machiaj profesional pentru evenimente și ședințe foto a cultivat o viziune estetică ascuțită, unde fiecare milimetru contează. Această atenție microscopică moștenită din arta machiajului este aplicată cu aceeași pasiune în procesul de epilare definitiva electroliza cluj, asigurând eliminarea firului fără a afecta pielea din jur.</p>
+
+    <div class="closing">
+      <p><strong>Pasul final către libertatea de a avea o piele impecabilă.</strong> Am explorat cum electroliza rămâne singura metodă omologată de FDA ca fiind 100% permanentă, oferind o soluție definitivă pentru orice fototip sau culoare a firului de păr. La Anastasia Popescu Boutique, transformăm această procedură riguroasă într-o experiență de tip boutique, marcată de o atenție meticuloasă la detalii și de un protocol de siguranță impecabil.</p>
+      <p>Nu mai este nevoie să depinzi de programări periodice de întreținere sau de soluții temporare care irită pielea. Este momentul să alegi expertiza unui specialist care nu face compromisuri când vine vorba de rezultate finale.</p>
+    </div>
+
+    <h2 id="faq">Întrebări frecvente despre electroepilare</h2>
+    <div class="faq">
+      <details>
+        <summary>Cât de dureroasă este epilarea prin electroliză?<span class="plus">+</span></summary>
+        <p>Senzația resimțită variază în funcție de pragul de sensibilitate al fiecărei persoane și de zona tratată, fiind adesea descrisă ca o pișcătură scurtă sau o căldură localizată. Tehnologia modernă de tip Blend ne permite să ajustăm parametrii echipamentului pentru a minimiza orice disconfort. În zonele mai sensibile, precum buza superioară, senzația poate fi mai intensă, însă impulsul durează doar câteva milisecunde.</p>
+      </details>
+      <details>
+        <summary>De câte ședințe de electroliză am nevoie pentru rezultate definitive?<span class="plus">+</span></summary>
+        <p>Numărul total de ședințe depinde de densitatea părului, istoricul hormonal și zona vizată, deoarece electroliza este eficientă doar pe firele aflate în faza de creștere activă. De regulă, sunt necesare mai multe vizite eșalonate pe parcursul a 12-18 luni pentru a surprinde toți foliculii în etapa optimă, dar rezultatul final este eliminarea totală a pilozității, fără ședințe de întreținere ulterioare.</p>
+      </details>
+      <details>
+        <summary>Electroliza lasă semne sau cicatrici pe piele?<span class="plus">+</span></summary>
+        <p>Procedura nu lasă semne permanente sau cicatrici dacă este executată de un specialist care utilizează setările corecte și sonde sterile de unică folosință. Imediat după ședință, este normal să apară o ușoară roșeață sau mici puncte de edem care dispar de regulă în 24-48 de ore. Respectarea protocolului de îngrijire post-tratament este esențială pentru o vindecare impecabilă.</p>
+      </details>
+      <details>
+        <summary>Pot face electroliză dacă sunt însărcinată?<span class="plus">+</span></summary>
+        <p>Deși nu există studii care să demonstreze un risc direct, recomandăm amânarea procedurii pe durata sarcinii ca măsură de precauție. Schimbările hormonale din această perioadă pot influența ritmul de creștere a părului și sensibilitatea pielii, făcând rezultatele mai greu de prevăzut.</p>
+      </details>
+      <details>
+        <summary>Care este diferența între electroliză și electroepilare?<span class="plus">+</span></summary>
+        <p>Acești doi termeni definesc exact același proces tehnologic de distrugere a centrului de regenerare al firului de păr prin curent electric. Electroliza este denumirea generică recunoscută la nivel internațional, în timp ce electroepilarea este un termen tehnic utilizat frecvent în cabinetele de estetică din România.</p>
+      </details>
+      <details>
+        <summary>Se poate face electroliză pe orice zonă a corpului?<span class="plus">+</span></summary>
+        <p>Electroliza poate fi aplicată pe aproape orice zonă a corpului unde există fire de păr nedorite, de la față și sprâncene până la sâni sau abdomen. Este deosebit de eficientă pentru zonele mici sau pentru firele izolate unde laserul nu are precizia necesară. Singurele excepții sunt interiorul nasului și al canalului auditiv, unde mucoasele sunt prea sensibile.</p>
+      </details>
+      <details>
+        <summary>Cât timp trebuie să fie firul de păr pentru ședința de epilare?<span class="plus">+</span></summary>
+        <p>Pentru o ședință reușită, firul de păr trebuie să aibă o lungime de aproximativ 2-3 milimetri deasupra pielii. Această dimensiune permite specialistului să prindă firul cu penseta după aplicarea impulsului electric, fără nicio tracțiune forțată. Recomandăm să nu mai folosești penseta sau ceara cu câteva săptămâni înainte de programare.</p>
+      </details>
+      <details>
+        <summary>De ce este electroliza mai scumpă decât laserul la prima vedere?<span class="plus">+</span></summary>
+        <p>La prima vedere, costul per oră poate părea mai ridicat, însă electroliza reprezintă o investiție finită, deoarece nu necesită ședințe de întreținere anuale. Fiind o procedură migăloasă, realizată manual fir cu fir, timpul alocat fiecărui client este mai mare decât în cazul laserului. Totuși, odată ce foliculul a fost distrus, cheltuielile tale cu epilarea pentru acea zonă devin zero.</p>
+      </details>
+    </div>
   </div>
 </article>
 
@@ -222,7 +293,7 @@
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.62 14.02c-.27.76-1.57 1.46-2.2 1.55-.56.08-1.27.12-2.05-.13-.48-.14-1.08-.32-1.86-.62-3.26-1.28-5.4-4.57-5.56-4.79-.16-.22-1.33-1.76-1.33-3.36s.84-2.38 1.14-2.71c.3-.32.65-.4.87-.4h.61c.19 0 .46-.08.72.55.28.65.92 2.26 1 2.42.08.17.14.36.03.58-.11.22-.17.36-.33.55-.16.2-.34.43-.49.58-.17.16-.34.33-.15.66.19.33.85 1.4 1.82 2.27 1.25 1.11 2.3 1.46 2.63 1.62.33.17.52.14.71-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.74-.16.3.11 1.9.9 2.23 1.06.33.16.55.24.63.37.08.13.08.79-.19 1.55Z"/></svg>
         Scrie pe WhatsApp
       </a>
-      <a class="btn btn-ghost" href="/">Vezi toate serviciile</a>
+      <a class="btn btn-ghost" href="/blog/">Vezi toate articolele</a>
     </div>
   </div>
 </section>
@@ -243,6 +314,22 @@
   "author":{"@type":"Organization","name":"Anastasia Popescu Boutique"},
   "publisher":{"@type":"Organization","name":"Anastasia Popescu Boutique"},
   "mainEntityOfPage":"https://epilare-electroliza-cluj.ro/blog/ghid-epilare-definitiva-electroliza-cluj/"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Cât de dureroasă este epilarea prin electroliză?","acceptedAnswer":{"@type":"Answer","text":"Senzația este adesea descrisă ca o pișcătură scurtă sau o căldură localizată; tehnologia modernă permite ajustarea parametrilor pentru a minimiza disconfortul."}},
+    {"@type":"Question","name":"De câte ședințe de electroliză am nevoie pentru rezultate definitive?","acceptedAnswer":{"@type":"Answer","text":"Depinde de densitatea părului și zona vizată; de regulă sunt necesare vizite eșalonate pe 12-18 luni pentru eliminarea totală a pilozității."}},
+    {"@type":"Question","name":"Electroliza lasă semne sau cicatrici pe piele?","acceptedAnswer":{"@type":"Answer","text":"Nu, dacă e executată corect, cu sonde sterile; poate apărea doar o roșeață ușoară temporară care dispare în 24-48 de ore."}},
+    {"@type":"Question","name":"Pot face electroliză dacă sunt însărcinată?","acceptedAnswer":{"@type":"Answer","text":"Se recomandă amânarea procedurii pe durata sarcinii ca măsură de precauție, din cauza schimbărilor hormonale."}},
+    {"@type":"Question","name":"Care este diferența între electroliză și electroepilare?","acceptedAnswer":{"@type":"Answer","text":"Sunt termeni pentru același proces tehnologic de distrugere a rădăcinii firului de păr prin curent electric."}},
+    {"@type":"Question","name":"Se poate face electroliză pe orice zonă a corpului?","acceptedAnswer":{"@type":"Answer","text":"Da, aproape orice zonă, cu excepția interiorului nasului și al canalului auditiv."}},
+    {"@type":"Question","name":"Cât timp trebuie să fie firul de păr pentru ședința de epilare?","acceptedAnswer":{"@type":"Answer","text":"Aproximativ 2-3 milimetri deasupra pielii, pentru manipulare precisă cu penseta."}},
+    {"@type":"Question","name":"De ce este electroliza mai scumpă decât laserul la prima vedere?","acceptedAnswer":{"@type":"Answer","text":"Pentru că e o procedură manuală, fir cu fir, dar e o investiție finită fără costuri de întreținere ulterioare."}}
+  ]
 }
 </script>
 </body>
