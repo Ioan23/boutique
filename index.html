@@ -158,6 +158,22 @@
     html{scroll-behavior:auto}
     .btn{transition:none}
   }
+  /* ---- Location ---- */
+  .location-block{padding:clamp(40px,7vw,72px) 0; background:var(--paper)}
+  .location-grid{display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:stretch}
+  .location-info h2{font-size:clamp(1.5rem,4vw,2.1rem); font-weight:800; margin:.3em 0 .6em}
+  .location-info p{color:#3a3735; margin:0 0 1.4em}
+  .location-detail{display:flex; gap:14px; align-items:flex-start; margin-bottom:1.1em}
+  .location-detail svg{width:22px; height:22px; flex:none; color:var(--red); margin-top:2px}
+  .location-detail strong{display:block; color:var(--ink); font-size:.95rem}
+  .location-detail span{color:#3a3735; font-size:.95rem}
+  .location-map{min-height:320px; border:2px solid var(--line); overflow:hidden}
+  .location-map iframe{width:100%; height:100%; min-height:320px; border:0; display:block}
+  @media(max-width:800px){
+    .location-grid{grid-template-columns:1fr}
+    .location-map{min-height:260px}
+    .location-map iframe{min-height:260px}
+  }
 </style>
 </head>
 <body>
@@ -292,6 +308,47 @@
   </div>
 </section>
 
+<section class="location-block" id="locatie">
+  <div class="wrap-wide">
+    <div class="location-grid">
+
+      <div class="location-info">
+        <div class="eyebrow">Locație</div>
+        <h2>Ne găsești în Cluj-Napoca</h2>
+        <p>Programările se fac exclusiv în avans. Scrie-ne pe WhatsApp înainte de a veni, ca să stabilim împreună ora potrivită.</p>
+
+        <div class="location-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <strong>Adresă</strong>
+            <span>Bulevardul Muncii 8, 400641 Cluj-Napoca</span>
+          </div>
+        </div>
+
+        <div class="location-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          <div>
+            <strong>Telefon / WhatsApp</strong>
+            <span>0750 497 312</span>
+          </div>
+        </div>
+
+        <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Anastasia+Popescu+Boutique+Bulevardul+Muncii+8+Cluj-Napoca" target="_blank" rel="noopener">Deschide în Google Maps</a>
+      </div>
+
+      <div class="location-map">
+        <iframe
+          src="https://www.google.com/maps?q=Anastasia+Popescu+Boutique+Bulevardul+Muncii+8+Cluj-Napoca&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Locația Anastasia Popescu Boutique pe Google Maps">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
     <strong>Anastasia Popescu Boutique</strong>
@@ -319,8 +376,17 @@
   "@context":"https://schema.org",
   "@type":"BeautySalon",
   "name":"Anastasia Popescu Boutique",
-  "description":"Epilare definitivă prin electroliză și machiaj profesional. Doar pe bază de programare.",
+  "description":"Epilare definitivă prin electroliză și machiaj profesional în Cluj-Napoca. Programări exclusiv în avans.",
+  "url":"https://epilare-electroliza-cluj.ro/",
   "telephone":"+40750497312",
+  "priceRange":"13,5 lei/minut",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Bulevardul Muncii 8",
+    "addressLocality":"Cluj-Napoca",
+    "postalCode":"400641",
+    "addressCountry":"RO"
+  },
   "sameAs":["https://www.instagram.com/anastasia.popescu__"],
   "makesOffer":[
     {"@type":"Offer","itemOffered":{"@type":"Service","name":"Epilare prin electroliză"}},
